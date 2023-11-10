@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FExpenses</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <noscript>You need to enable script to run this app</noscript>
+    
+    <div class="container">
+        <h2>
+            You've spent in this month:
+            <span id="monthly-expense">$0.00</span>
+        </h2>
+        <div id="show-expense-container" class="show expense-container">
+            <h3>Month expenses:</h3>
+            <div id="expense-list-container">
+
+            </div>
+            <div class="pagination">
+                <section>
+                    <button class="back" class="shift-page"><</button>
+                    <section id="page-container" class="pages"></section>
+                    <button class="forward" class="shift-page">></button>
+                </section>
+            </div>
+        </div>
+        <div id="add-expense-container" class="add expense-container">
+            <h3>Add expense:</h3>
+            <div id="add-description-container">
+                <label for="txt-add--description">
+                    Description: 
+                    <input type="text" id="txt-add-description" placeholder="Enter a description" minlength="3" maxlength="30">
+                </label>
+            </div>
+
+            <div id="add-price-container">
+                <label for="txt-add-price">
+                    Price: 
+                    <input type="text" id="txt-add-price" placeholder="Enter a price" maxlength="10">
+                </label>
+            </div>
+
+            <div class="btn-add-container">
+                <button id="btn-add-expense">ADD EXPENSE</button>
+            </div>
+        </div>
+
+        <div id="edit-expense-container" class="edit expense-container">
+            <h3>Edit expense:</h3>
+            <div id="edit-description-container">
+                <label for="txt-edit--description">
+                    Description: 
+                    <input type="text" id="txt-edit-description" placeholder="Enter a description" minlength="3" maxlength="30">
+                </label>
+            </div>
+
+            <div id="edit-price-container">
+                <label for="txt-edit-price">
+                    Price: 
+                    <input type="text" id="txt-edit-price" placeholder="Enter a price" maxlength="10">
+                </label>
+            </div>
+
+            <div class="btn-edit-container">
+                <button id="btn-edit-expense">EDIT EXPENSE</button>
+            </div>
+        </div>
+        <div id="bottom-container">
+            <button id="btn-open-close">+</button>
+        </div>
+    </div>
+</body>
+</html>
